@@ -1,0 +1,24 @@
+{
+  "manifest_version": "WORKSPACE_BASELINE_V1",
+  "captured_at": "2026-08-24T19:57:01.2535418+08:00",
+  "paper_workspace_git_commit": "SELF_INITIAL_COMMIT",
+  "paper_commit_resolution": "The containing initial commit is self-referential; resolve with git rev-parse HEAD after checkout. The final task report records the concrete hash.",
+  "system_authority_commit": "7ff79ee8ca81ea976c3791a5064772dbfb126082",
+  "system_expected_commit": "7ff79ee",
+  "system_expected_head_match": true,
+  "system_worktree_dirty_at_intake": true,
+  "system_modified_by_goal": false,
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr 2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "ortools_version": "9.15.6755",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "optimizer_id": "PROFILE_AWARE_CP_SAT_OPTIMIZER_V1",
+  "relevant_source_sha256": {
+    "src/scheduling_system_post_mvp/services/natural_language_event_ingress.py": "a37024f7185ac8b01f7aa8ffab051e226f979991d09112f6590ffe170734c3a9",
+    "src/scheduling_system_post_mvp/services/llm_provider_interface.py": "107edc1ec493a9cc373989f45499e4ad24918ad5b8ec1c8afa1ba72396c4f7c2",
+    "src/scheduling_system_post_mvp/services/business_event_rescheduling.py": "ca9ebac48477be1ee9859a573e64ed13b3547a4a0c334f452a388c99b6aee4db",
+    "src/scheduling_system_post_mvp/services/active_plan_lifecycle.py": "487cde61e9f8a17ca21b45ea2c9a764770a993a75e12ea1f1267bd14bf59d5a1",
+    "src/scheduling_system_post_mvp/services/unified_scheduling.py": "800f84e971bcb0fc4210f2fc3576f6400029e5adc917f09e51f74a50f0ed9e75",
+    "src/scheduling_system_post_mvp/optimizer/profile_aware_cp_sat.py": "b5ebd0ef1ca15cc267b7ce9e001e31114f87aae0fb81e1ee80fed2762c0dbb01",
+    "acceptance/benchmark/reference/feasibility_validator.py": "dd57998f0df86a99062c2ef62fa8f120deab10bd3d1aa4a85ab11ba128cf3b0e"
+  }
+}

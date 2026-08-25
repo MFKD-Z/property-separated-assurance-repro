@@ -1,0 +1,34 @@
+{
+  "completed_at_utc": "2026-08-24T14:27:45.9126036Z",
+  "git_diff_check": {
+    "command": "git diff --check",
+    "exit_code": 0,
+    "result": "PASS"
+  },
+  "manifest_version": "A24_A26_FINAL_VERIFICATION_V1",
+  "paper_data_validation": {
+    "csv_files_parsed": 10,
+    "exit_code": 0,
+    "json_files_parsed": 420,
+    "jsonl_files_parsed": 3,
+    "result": "PASS"
+  },
+  "paper_tests": {
+    "command": "C:\\Users\\WM\\Desktop\\ILLM\\SCHEDULING_SYSTEM_POST_MVP\\.venv\\Scripts\\python.exe -m pytest tests -q",
+    "exit_code": 0,
+    "log": "evidence/manifests/a24_a26_paper_tests_v1.log",
+    "result": "20 passed in 0.22s"
+  },
+  "sut_fingerprint_after": "36431f4b2fe7bcb58a3c571478d4eb7ed2698a39f1333df9c01ad7f5420e7571",
+  "sut_fingerprint_before": "36431f4b2fe7bcb58a3c571478d4eb7ed2698a39f1333df9c01ad7f5420e7571",
+  "sut_fingerprint_unchanged": true,
+  "system_authority_commit": "7ff79ee8ca81ea976c3791a5064772dbfb126082",
+  "system_modified": false,
+  "system_tests": {
+    "command": "C:\\Users\\WM\\Desktop\\ILLM\\SCHEDULING_SYSTEM_POST_MVP\\.venv\\Scripts\\python.exe -m pytest tests -q",
+    "exit_code": 0,
+    "log": "evidence/manifests/a24_a26_system_tests_v1.log",
+    "result": "274 passed, 2 warnings in 69.02s (0:01:09)"
+  },
+  "verification_pass": true
+}

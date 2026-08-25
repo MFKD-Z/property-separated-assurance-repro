@@ -1,0 +1,837 @@
+{
+  "accepted_schedule_count": 30,
+  "accepted_schedule_feasibility_rate": {
+    "denominator": 30,
+    "numerator": 30,
+    "value": 1.0
+  },
+  "gate": "PASS",
+  "instance_count": 4,
+  "manifest_version": "A25_DISTURBANCE_MATRIX_V1",
+  "matrix_schedule_production_rate": {
+    "denominator": 72,
+    "numerator": 30,
+    "value": 0.4166666666666667
+  },
+  "matrix_unit_count": 72,
+  "pre_solve_contract_block_count": 42,
+  "preflight": {
+    "captured_at_utc": "2026-08-24T14:22:13.403134+00:00",
+    "cpu_count": 8,
+    "ortools_version": "9.15.6755",
+    "paper_authority_commit": "78d198bd840a5b8db79eb9a40035fed1fa0b2ce3",
+    "paper_head_before_goal_commit": "78d198bd840a5b8db79eb9a40035fed1fa0b2ce3",
+    "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "relevant_sut_source_hashes": {
+      "acceptance/benchmark/reference/exact_numeric.py": "b7ca41d7efd27cc3e4e1c871f78ba7cd65c91bb673bd434bc292e71ad4e5ef3b",
+      "acceptance/benchmark/reference/feasibility_validator.py": "dd57998f0df86a99062c2ef62fa8f120deab10bd3d1aa4a85ab11ba128cf3b0e",
+      "acceptance/benchmark/reference/objective_evaluator.py": "b0b7aa793a132d1f42eee3807e24077341ad0084b549e34e3c3be9e4cf1415da",
+      "acceptance/benchmark/reference/profile_encoding.py": "0b2a77b873455ebb6a2665cbc92f4c1f02a5cfd9b75e78da224268fe7bcdf3bc",
+      "acceptance/benchmark/reference/reference_model.py": "cd746f4adb3bc44df7d4f86953cc64ef5d184a3e7564701aa2039849e8069fce",
+      "src/scheduling_system_post_mvp/optimizer/profile_aware_cp_sat.py": "b5ebd0ef1ca15cc267b7ce9e001e31114f87aae0fb81e1ee80fed2762c0dbb01",
+      "src/scheduling_system_post_mvp/services/active_plan_lifecycle.py": "487cde61e9f8a17ca21b45ea2c9a764770a993a75e12ea1f1267bd14bf59d5a1",
+      "src/scheduling_system_post_mvp/services/execution_progress.py": "a5373825d6cc20fd536f5f1763885f506e31643c9f9fcb954e40633de646575c",
+      "src/scheduling_system_post_mvp/services/execution_progress_rescheduling.py": "fbb8cfec23e8e84deb6e855c8ecd7eed3bb4f3fd31314264b6e8fe5122d17701",
+      "src/scheduling_system_post_mvp/services/industrial_dataset_loader.py": "7e53e1d1ab7c2095983a0edd3e715db70f75885066e97bac4b10437362914e2c",
+      "src/scheduling_system_post_mvp/services/public_fjsp_closed_loop_validation.py": "826448eeb8b48572c15422f2f709e55cc274dcd0d15ee736b22f0d1533bb5da3",
+      "src/scheduling_system_post_mvp/services/unified_scheduling.py": "800f84e971bcb0fc4210f2fc3576f6400029e5adc917f09e51f74a50f0ed9e75"
+    },
+    "sut_fingerprint_before": "36431f4b2fe7bcb58a3c571478d4eb7ed2698a39f1333df9c01ad7f5420e7571",
+    "system_authority_commit": "7ff79ee8ca81ea976c3791a5064772dbfb126082"
+  },
+  "reconstruction": {
+    "MK01": {
+      "canonical_baseline_artifact": "data/disturbance_matrix/raw/MK01_canonical_baseline.json",
+      "canonical_instance_hash": "6c1dcef9a1643edc020ed28eeee6a21c62b14bc726b8110ecc286fe0de0fd038",
+      "canonical_makespan": 40,
+      "canonical_schedule_hash": "c495dde5a0a8c2db06d720a2b831211896b1c748f1d24b645ab3b96d97178c68",
+      "duration": {
+        "LONG": 8,
+        "MEDIUM": 4,
+        "SHORT": 2
+      },
+      "failed_machine_id": "MACHINE_A5_P2",
+      "source_ledger": {
+        "fidelity": {
+          "jobs": 10,
+          "machines": 6,
+          "operation_machine_modes": 115,
+          "operations": 55,
+          "raw_adapter_mode_match": true,
+          "raw_normalized_match": true
+        },
+        "instance": "MK01",
+        "mapping": {
+          "machine_identifier_rule": "public machine index m (zero-based) -> M(m+1, two digits)",
+          "mode_identifier_rule": "exact public (job, operation, machine, duration) -> one source mode with the same machine and duration",
+          "operation_identifier_rule": "public (job, operation) -> Jjj/OP_Jjj_oo",
+          "public_job_to_internal_product_order": [
+            {
+              "internal_order_id": "J01",
+              "internal_product_id": "P01",
+              "public_job": 1
+            },
+            {
+              "internal_order_id": "J02",
+              "internal_product_id": "P02",
+              "public_job": 2
+            },
+            {
+              "internal_order_id": "J03",
+              "internal_product_id": "P03",
+              "public_job": 3
+            },
+            {
+              "internal_order_id": "J04",
+              "internal_product_id": "P04",
+              "public_job": 4
+            },
+            {
+              "internal_order_id": "J05",
+              "internal_product_id": "P05",
+              "public_job": 5
+            },
+            {
+              "internal_order_id": "J06",
+              "internal_product_id": "P06",
+              "public_job": 6
+            },
+            {
+              "internal_order_id": "J07",
+              "internal_product_id": "P07",
+              "public_job": 7
+            },
+            {
+              "internal_order_id": "J08",
+              "internal_product_id": "P08",
+              "public_job": 8
+            },
+            {
+              "internal_order_id": "J09",
+              "internal_product_id": "P09",
+              "public_job": 9
+            },
+            {
+              "internal_order_id": "J10",
+              "internal_product_id": "P10",
+              "public_job": 10
+            }
+          ]
+        },
+        "source": {
+          "dataset_family": "Brandimarte Flexible Job Shop",
+          "normalized_path": "data/public/brandimarte/mk01.json",
+          "normalized_sha256": "93FBA8A6540D9C207F6DC1276CC840C06852F144A8E1A80B291F2E372980B140",
+          "raw_path": "data/public/brandimarte/mk01.txt",
+          "raw_sha256": "449ada8093e03a84bf2255fa2a1673ccbc80cce7b82e855c5216533a330751ff",
+          "url": "https://scheduleopt.github.io/benchmarks/fjsplib/"
+        },
+        "synthetic_augmentation": {
+          "SYNTHETIC_AUGMENTATION": true,
+          "cost_rate": "0 (neutral; public source does not provide cost)",
+          "defect_probability": "0 (neutral; public source does not provide quality)",
+          "due_time": "sum of the public instance's per-operation maximum durations",
+          "loss_per_defect": "0 (neutral; public source does not provide quality)",
+          "priority": 1,
+          "quantity": 1,
+          "seed_or_rule": "deterministic identifiers and constants only; no LLM mapping"
+        },
+        "validation_id": "PUBLIC_FJSP_CLOSED_LOOP_VALIDATION_V1"
+      },
+      "timing": {
+        "EARLY": 8,
+        "LATE": 32,
+        "MIDDLE": 20
+      }
+    },
+    "MK03": {
+      "canonical_baseline_artifact": "data/disturbance_matrix/raw/MK03_canonical_baseline.json",
+      "canonical_instance_hash": "99cf8de5523f83829b85aff91c20c08eea7447d38bae24caf7c8e69edd759abd",
+      "canonical_makespan": 204,
+      "canonical_schedule_hash": "cbcd52d0d7fc80a6b72929d586dece8ef5af2aa8edbb6c60b295c2d9701bd08d",
+      "duration": {
+        "LONG": 41,
+        "MEDIUM": 20,
+        "SHORT": 10
+      },
+      "failed_machine_id": "MACHINE_A5_P1",
+      "source_ledger": {
+        "fidelity": {
+          "jobs": 15,
+          "machines": 8,
+          "operation_machine_modes": 451,
+          "operations": 150,
+          "raw_adapter_mode_match": true,
+          "raw_normalized_match": true
+        },
+        "instance": "MK03",
+        "mapping": {
+          "machine_identifier_rule": "public machine index m (zero-based) -> M(m+1, two digits)",
+          "mode_identifier_rule": "exact public (job, operation, machine, duration) -> one source mode with the same machine and duration",
+          "operation_identifier_rule": "public (job, operation) -> Jjj/OP_Jjj_oo",
+          "public_job_to_internal_product_order": [
+            {
+              "internal_order_id": "J01",
+              "internal_product_id": "P01",
+              "public_job": 1
+            },
+            {
+              "internal_order_id": "J02",
+              "internal_product_id": "P02",
+              "public_job": 2
+            },
+            {
+              "internal_order_id": "J03",
+              "internal_product_id": "P03",
+              "public_job": 3
+            },
+            {
+              "internal_order_id": "J04",
+              "internal_product_id": "P04",
+              "public_job": 4
+            },
+            {
+              "internal_order_id": "J05",
+              "internal_product_id": "P05",
+              "public_job": 5
+            },
+            {
+              "internal_order_id": "J06",
+              "internal_product_id": "P06",
+              "public_job": 6
+            },
+            {
+              "internal_order_id": "J07",
+              "internal_product_id": "P07",
+              "public_job": 7
+            },
+            {
+              "internal_order_id": "J08",
+              "internal_product_id": "P08",
+              "public_job": 8
+            },
+            {
+              "internal_order_id": "J09",
+              "internal_product_id": "P09",
+              "public_job": 9
+            },
+            {
+              "internal_order_id": "J10",
+              "internal_product_id": "P10",
+              "public_job": 10
+            },
+            {
+              "internal_order_id": "J11",
+              "internal_product_id": "P11",
+              "public_job": 11
+            },
+            {
+              "internal_order_id": "J12",
+              "internal_product_id": "P12",
+              "public_job": 12
+            },
+            {
+              "internal_order_id": "J13",
+              "internal_product_id": "P13",
+              "public_job": 13
+            },
+            {
+              "internal_order_id": "J14",
+              "internal_product_id": "P14",
+              "public_job": 14
+            },
+            {
+              "internal_order_id": "J15",
+              "internal_product_id": "P15",
+              "public_job": 15
+            }
+          ]
+        },
+        "source": {
+          "dataset_family": "Brandimarte Flexible Job Shop",
+          "normalized_path": "data/public/brandimarte/mk03.json",
+          "normalized_sha256": "2FD80DF458C727C04C120513A6055AFE6534A2170EF6D24079CE8333DB488D67",
+          "raw_path": "data/public/brandimarte/mk03.txt",
+          "raw_sha256": "0eb4b563ac5d635c0229769184ab8959f24cc78c725a1277a1e6a2d7bc7f4228",
+          "url": "https://scheduleopt.github.io/benchmarks/fjsplib/"
+        },
+        "synthetic_augmentation": {
+          "SYNTHETIC_AUGMENTATION": true,
+          "cost_rate": "0 (neutral; public source does not provide cost)",
+          "defect_probability": "0 (neutral; public source does not provide quality)",
+          "due_time": "sum of the public instance's per-operation maximum durations",
+          "loss_per_defect": "0 (neutral; public source does not provide quality)",
+          "priority": 1,
+          "quantity": 1,
+          "seed_or_rule": "deterministic identifiers and constants only; no LLM mapping"
+        },
+        "validation_id": "PUBLIC_FJSP_CLOSED_LOOP_VALIDATION_V1"
+      },
+      "timing": {
+        "EARLY": 41,
+        "LATE": 163,
+        "MIDDLE": 102
+      }
+    },
+    "MK04": {
+      "canonical_baseline_artifact": "data/disturbance_matrix/raw/MK04_canonical_baseline.json",
+      "canonical_instance_hash": "e4288ec749bc398093e72eaef7dca6897571ac862400c57efdaf30e527d4fd29",
+      "canonical_makespan": 60,
+      "canonical_schedule_hash": "cf8abdc05634739338ad4023451a0d84b2cba8a1e9083f6a4e19a7b487e45b76",
+      "duration": {
+        "LONG": 12,
+        "MEDIUM": 6,
+        "SHORT": 3
+      },
+      "failed_machine_id": "MACHINE_A5_P1",
+      "source_ledger": {
+        "fidelity": {
+          "jobs": 15,
+          "machines": 8,
+          "operation_machine_modes": 172,
+          "operations": 90,
+          "raw_adapter_mode_match": true,
+          "raw_normalized_match": true
+        },
+        "instance": "MK04",
+        "mapping": {
+          "machine_identifier_rule": "public machine index m (zero-based) -> M(m+1, two digits)",
+          "mode_identifier_rule": "exact public (job, operation, machine, duration) -> one source mode with the same machine and duration",
+          "operation_identifier_rule": "public (job, operation) -> Jjj/OP_Jjj_oo",
+          "public_job_to_internal_product_order": [
+            {
+              "internal_order_id": "J01",
+              "internal_product_id": "P01",
+              "public_job": 1
+            },
+            {
+              "internal_order_id": "J02",
+              "internal_product_id": "P02",
+              "public_job": 2
+            },
+            {
+              "internal_order_id": "J03",
+              "internal_product_id": "P03",
+              "public_job": 3
+            },
+            {
+              "internal_order_id": "J04",
+              "internal_product_id": "P04",
+              "public_job": 4
+            },
+            {
+              "internal_order_id": "J05",
+              "internal_product_id": "P05",
+              "public_job": 5
+            },
+            {
+              "internal_order_id": "J06",
+              "internal_product_id": "P06",
+              "public_job": 6
+            },
+            {
+              "internal_order_id": "J07",
+              "internal_product_id": "P07",
+              "public_job": 7
+            },
+            {
+              "internal_order_id": "J08",
+              "internal_product_id": "P08",
+              "public_job": 8
+            },
+            {
+              "internal_order_id": "J09",
+              "internal_product_id": "P09",
+              "public_job": 9
+            },
+            {
+              "internal_order_id": "J10",
+              "internal_product_id": "P10",
+              "public_job": 10
+            },
+            {
+              "internal_order_id": "J11",
+              "internal_product_id": "P11",
+              "public_job": 11
+            },
+            {
+              "internal_order_id": "J12",
+              "internal_product_id": "P12",
+              "public_job": 12
+            },
+            {
+              "internal_order_id": "J13",
+              "internal_product_id": "P13",
+              "public_job": 13
+            },
+            {
+              "internal_order_id": "J14",
+              "internal_product_id": "P14",
+              "public_job": 14
+            },
+            {
+              "internal_order_id": "J15",
+              "internal_product_id": "P15",
+              "public_job": 15
+            }
+          ]
+        },
+        "source": {
+          "dataset_family": "Brandimarte Flexible Job Shop",
+          "normalized_path": "data/public/brandimarte/mk04.json",
+          "normalized_sha256": "FCCDCD3F464CC54562E15BD80DAC5351798643FD6D38DAD1F61508512B3EDA93",
+          "raw_path": "data/public/brandimarte/raw/mk04.txt",
+          "raw_sha256": "8b44291b94e6244fd8283dce4dbf7a4dbbd2b9950aa2a9d198f660e4d1131705",
+          "url": "https://scheduleopt.github.io/benchmarks/fjsplib/"
+        },
+        "synthetic_augmentation": {
+          "SYNTHETIC_AUGMENTATION": true,
+          "cost_rate": "0 (neutral; public source does not provide cost)",
+          "defect_probability": "0 (neutral; public source does not provide quality)",
+          "due_time": "sum of the public instance's per-operation maximum durations",
+          "loss_per_defect": "0 (neutral; public source does not provide quality)",
+          "priority": 1,
+          "quantity": 1,
+          "seed_or_rule": "deterministic identifiers and constants only; no LLM mapping"
+        },
+        "validation_id": "PUBLIC_FJSP_CLOSED_LOOP_VALIDATION_V1"
+      },
+      "timing": {
+        "EARLY": 12,
+        "LATE": 48,
+        "MIDDLE": 30
+      }
+    },
+    "MK06": {
+      "canonical_baseline_artifact": "data/disturbance_matrix/raw/MK06_canonical_baseline.json",
+      "canonical_instance_hash": "0b65ee7331fdb4189048165a18081b72a6d2e993e8494340a7119af01491ecf6",
+      "canonical_makespan": 65,
+      "canonical_schedule_hash": "26919ab4106f68731f323af6a50cfca9c159d932a03979c8b69b1fca903ac63b",
+      "duration": {
+        "LONG": 13,
+        "MEDIUM": 7,
+        "SHORT": 3
+      },
+      "failed_machine_id": "MACHINE_A5_P1",
+      "source_ledger": {
+        "fidelity": {
+          "jobs": 10,
+          "machines": 10,
+          "operation_machine_modes": 490,
+          "operations": 150,
+          "raw_adapter_mode_match": true,
+          "raw_normalized_match": true
+        },
+        "instance": "MK06",
+        "mapping": {
+          "machine_identifier_rule": "public machine index m (zero-based) -> M(m+1, two digits)",
+          "mode_identifier_rule": "exact public (job, operation, machine, duration) -> one source mode with the same machine and duration",
+          "operation_identifier_rule": "public (job, operation) -> Jjj/OP_Jjj_oo",
+          "public_job_to_internal_product_order": [
+            {
+              "internal_order_id": "J01",
+              "internal_product_id": "P01",
+              "public_job": 1
+            },
+            {
+              "internal_order_id": "J02",
+              "internal_product_id": "P02",
+              "public_job": 2
+            },
+            {
+              "internal_order_id": "J03",
+              "internal_product_id": "P03",
+              "public_job": 3
+            },
+            {
+              "internal_order_id": "J04",
+              "internal_product_id": "P04",
+              "public_job": 4
+            },
+            {
+              "internal_order_id": "J05",
+              "internal_product_id": "P05",
+              "public_job": 5
+            },
+            {
+              "internal_order_id": "J06",
+              "internal_product_id": "P06",
+              "public_job": 6
+            },
+            {
+              "internal_order_id": "J07",
+              "internal_product_id": "P07",
+              "public_job": 7
+            },
+            {
+              "internal_order_id": "J08",
+              "internal_product_id": "P08",
+              "public_job": 8
+            },
+            {
+              "internal_order_id": "J09",
+              "internal_product_id": "P09",
+              "public_job": 9
+            },
+            {
+              "internal_order_id": "J10",
+              "internal_product_id": "P10",
+              "public_job": 10
+            }
+          ]
+        },
+        "source": {
+          "dataset_family": "Brandimarte Flexible Job Shop",
+          "normalized_path": "data/public/brandimarte/mk06.json",
+          "normalized_sha256": "36D576ECB6E3BAE2F1D57F74F5341C13F8B8F964C6C4333AAAEFD0580CF50197",
+          "raw_path": "data/public/brandimarte/raw/mk06.txt",
+          "raw_sha256": "3630268312e16f17209d5122b50a332d2804dde237b3c882e6a8faff958f1945",
+          "url": "https://scheduleopt.github.io/benchmarks/fjsplib/"
+        },
+        "synthetic_augmentation": {
+          "SYNTHETIC_AUGMENTATION": true,
+          "cost_rate": "0 (neutral; public source does not provide cost)",
+          "defect_probability": "0 (neutral; public source does not provide quality)",
+          "due_time": "sum of the public instance's per-operation maximum durations",
+          "loss_per_defect": "0 (neutral; public source does not provide quality)",
+          "priority": 1,
+          "quantity": 1,
+          "seed_or_rule": "deterministic identifiers and constants only; no LLM mapping"
+        },
+        "validation_id": "PUBLIC_FJSP_CLOSED_LOOP_VALIDATION_V1"
+      },
+      "timing": {
+        "EARLY": 13,
+        "LATE": 52,
+        "MIDDLE": 33
+      }
+    }
+  },
+  "rounding_rule": "ROUND_HALF_UP_FOR_NONNEGATIVE_VALUES:floor(x+0.5)",
+  "variability_accepted_count": 12,
+  "variability_attempt_count": 24,
+  "variability_blocked_count": 12,
+  "variability_scenario_profile_unit_count": 8,
+  "variability_summary": [
+    {
+      "attempt_count": 3,
+      "best_bound_encoded": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "blocked_count": 3,
+      "instance_id": "MK01",
+      "machine_reassignment_count": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "objective_encoded": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "profile_id": "P00_BALANCED",
+      "runtime_seconds": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "start_time_deviation_sum": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "status_distribution": {
+        "NOT_RUN_PRE_SOLVE_CONTRACT_BLOCK": 3
+      },
+      "unique_schedule_hash_count": 0
+    },
+    {
+      "attempt_count": 3,
+      "best_bound_encoded": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "blocked_count": 3,
+      "instance_id": "MK01",
+      "machine_reassignment_count": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "objective_encoded": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "profile_id": "P02_RESOURCE_DOMINANT",
+      "runtime_seconds": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "start_time_deviation_sum": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "status_distribution": {
+        "NOT_RUN_PRE_SOLVE_CONTRACT_BLOCK": 3
+      },
+      "unique_schedule_hash_count": 0
+    },
+    {
+      "attempt_count": 3,
+      "best_bound_encoded": {
+        "count": 3,
+        "max": 22624,
+        "mean": 22624,
+        "min": 22624
+      },
+      "blocked_count": 0,
+      "instance_id": "MK03",
+      "machine_reassignment_count": {
+        "count": 3,
+        "max": 22,
+        "mean": 22,
+        "min": 22
+      },
+      "objective_encoded": {
+        "count": 3,
+        "max": 22624,
+        "mean": 22624,
+        "min": 22624
+      },
+      "profile_id": "P00_BALANCED",
+      "runtime_seconds": {
+        "count": 3,
+        "max": 2.825828,
+        "mean": 2.7916036666666666,
+        "min": 2.739641
+      },
+      "start_time_deviation_sum": {
+        "count": 3,
+        "max": 1415,
+        "mean": 1415,
+        "min": 1415
+      },
+      "status_distribution": {
+        "OPTIMAL": 3
+      },
+      "unique_schedule_hash_count": 1
+    },
+    {
+      "attempt_count": 3,
+      "best_bound_encoded": {
+        "count": 3,
+        "max": 158368,
+        "mean": 158368,
+        "min": 158368
+      },
+      "blocked_count": 0,
+      "instance_id": "MK03",
+      "machine_reassignment_count": {
+        "count": 3,
+        "max": 22,
+        "mean": 22,
+        "min": 22
+      },
+      "objective_encoded": {
+        "count": 3,
+        "max": 158368,
+        "mean": 158368,
+        "min": 158368
+      },
+      "profile_id": "P02_RESOURCE_DOMINANT",
+      "runtime_seconds": {
+        "count": 3,
+        "max": 2.866366,
+        "mean": 2.8031433333333333,
+        "min": 2.742009
+      },
+      "start_time_deviation_sum": {
+        "count": 3,
+        "max": 1415,
+        "mean": 1415,
+        "min": 1415
+      },
+      "status_distribution": {
+        "OPTIMAL": 3
+      },
+      "unique_schedule_hash_count": 1
+    },
+    {
+      "attempt_count": 3,
+      "best_bound_encoded": {
+        "count": 3,
+        "max": 6666,
+        "mean": 6666,
+        "min": 6666
+      },
+      "blocked_count": 0,
+      "instance_id": "MK04",
+      "machine_reassignment_count": {
+        "count": 3,
+        "max": 6,
+        "mean": 6,
+        "min": 6
+      },
+      "objective_encoded": {
+        "count": 3,
+        "max": 6666,
+        "mean": 6666,
+        "min": 6666
+      },
+      "profile_id": "P00_BALANCED",
+      "runtime_seconds": {
+        "count": 3,
+        "max": 1.073222,
+        "mean": 0.9656183333333332,
+        "min": 0.829488
+      },
+      "start_time_deviation_sum": {
+        "count": 3,
+        "max": 188,
+        "mean": 188,
+        "min": 188
+      },
+      "status_distribution": {
+        "OPTIMAL": 3
+      },
+      "unique_schedule_hash_count": 1
+    },
+    {
+      "attempt_count": 3,
+      "best_bound_encoded": {
+        "count": 3,
+        "max": 46662,
+        "mean": 46662,
+        "min": 46662
+      },
+      "blocked_count": 0,
+      "instance_id": "MK04",
+      "machine_reassignment_count": {
+        "count": 3,
+        "max": 6,
+        "mean": 6,
+        "min": 6
+      },
+      "objective_encoded": {
+        "count": 3,
+        "max": 46662,
+        "mean": 46662,
+        "min": 46662
+      },
+      "profile_id": "P02_RESOURCE_DOMINANT",
+      "runtime_seconds": {
+        "count": 3,
+        "max": 0.893586,
+        "mean": 0.859472,
+        "min": 0.823122
+      },
+      "start_time_deviation_sum": {
+        "count": 3,
+        "max": 188,
+        "mean": 188,
+        "min": 188
+      },
+      "status_distribution": {
+        "OPTIMAL": 3
+      },
+      "unique_schedule_hash_count": 1
+    },
+    {
+      "attempt_count": 3,
+      "best_bound_encoded": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "blocked_count": 3,
+      "instance_id": "MK06",
+      "machine_reassignment_count": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "objective_encoded": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "profile_id": "P00_BALANCED",
+      "runtime_seconds": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "start_time_deviation_sum": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "status_distribution": {
+        "NOT_RUN_PRE_SOLVE_CONTRACT_BLOCK": 3
+      },
+      "unique_schedule_hash_count": 0
+    },
+    {
+      "attempt_count": 3,
+      "best_bound_encoded": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "blocked_count": 3,
+      "instance_id": "MK06",
+      "machine_reassignment_count": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "objective_encoded": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "profile_id": "P02_RESOURCE_DOMINANT",
+      "runtime_seconds": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "start_time_deviation_sum": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "min": null
+      },
+      "status_distribution": {
+        "NOT_RUN_PRE_SOLVE_CONTRACT_BLOCK": 3
+      },
+      "unique_schedule_hash_count": 0
+    }
+  ]
+}

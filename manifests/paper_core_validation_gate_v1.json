@@ -1,0 +1,213 @@
+{
+  "audit": {
+    "AUDITABLE_ACCEPTED_SCHEDULE_RATE": {
+      "denominator": 97,
+      "numerator": 97,
+      "value": 1.0
+    },
+    "MISSING_EVIDENCE_FIELD_COUNTS": {},
+    "PROVENANCE_COMPLETENESS_RATE": {
+      "denominator": 97,
+      "numerator": 97,
+      "value": 1.0
+    }
+  },
+  "benchmark_sha256": "bc9a675c1ebbb5d131e98ba3ba1a113622889866194424f748dd463fa747c867",
+  "controlled_benchmark_boundary": "Synthetic controlled language; not a natural factory-dialogue corpus.",
+  "controlled_s0_f1_counterexample_count": 12,
+  "evidence_hashes": {
+    "authority_case_results_v1.jsonl": "e43791b83b6a4e7cf15fa3c347c4b8cc61eae28b9714fbbac39a97ce8f3f7650",
+    "real_llm_outputs_v1.jsonl": "48530bd11e1266128f9e8ab1324349272dbfc8c11903bfa20e7bdb57f0ad1e2e",
+    "semantic_case_results_v1.jsonl": "ed741343815f13f5e4222a72eb5043da43040074882bb5315f327094b9ed71d1",
+    "semantic_feasibility_counterexamples_v1.jsonl": "0a21e6d43066c4c081f5a8bd34930e5a8190a150cc44a76d962426e2349ee5f3"
+  },
+  "gates": {
+    "G1_REAL_LLM_EVIDENCE": "PASS",
+    "G2_SEMANTIC_ERRORS_MEASURABLE": "PASS",
+    "G3_VALIDATOR_INTERCEPTION_EVIDENCE": "PASS",
+    "G4_AUTHORITY_INTEGRITY": "PASS",
+    "G5_SEMANTIC_FEASIBILITY_NON_EQUIVALENCE": "PASS",
+    "G6_AUDIT_EVIDENCE": "PASS"
+  },
+  "generated_at": "2026-08-24T13:34:59.005979+00:00",
+  "goal": "PAPER_CORE_VALIDATION_GATE_V1",
+  "interpretation_boundary": "Feasibility is evaluated for the constructed instance and does not prove semantic correctness.",
+  "live_case_count": 160,
+  "manifest_version": "PAPER_CORE_VALIDATION_GATE_V1",
+  "metrics": {
+    "ATTACK_BLOCK_RATE": {
+      "denominator": 40,
+      "numerator": 40,
+      "value": 1.0
+    },
+    "CONSTRAINT_F1": {
+      "denominator": 1008,
+      "numerator": 980,
+      "value": 0.9722222222222222
+    },
+    "CONSTRAINT_PRECISION": {
+      "denominator": 498,
+      "numerator": 490,
+      "value": 0.9839357429718876
+    },
+    "CONSTRAINT_RECALL": {
+      "denominator": 510,
+      "numerator": 490,
+      "value": 0.9607843137254902
+    },
+    "END_TO_END_INTENT_PRESERVATION_RATE": {
+      "denominator": 100,
+      "numerator": 92,
+      "value": 0.92
+    },
+    "FALSE_REJECTION_RATE": {
+      "denominator": 100,
+      "numerator": 6,
+      "value": 0.06
+    },
+    "FIELD_EXACT_MATCH": {
+      "denominator": 510,
+      "numerator": 490,
+      "value": 0.9607843137254902
+    },
+    "HALLUCINATED_CONSTRAINT_RATE": {
+      "denominator": 498,
+      "numerator": 8,
+      "value": 0.01606425702811245
+    },
+    "OMITTED_CONSTRAINT_RATE": {
+      "denominator": 510,
+      "numerator": 20,
+      "value": 0.0392156862745098
+    },
+    "OPTIMIZER_ORIGIN_RATE_FOR_ACCEPTED_SCHEDULES": {
+      "denominator": 97,
+      "numerator": 97,
+      "value": 1.0
+    },
+    "SEMANTIC_CORRECT_AND_FEASIBLE_RATE": {
+      "denominator": 100,
+      "numerator": 92,
+      "value": 0.92
+    },
+    "STRUCTURED_EXACT_MATCH": {
+      "denominator": 100,
+      "numerator": 92,
+      "value": 0.92
+    },
+    "UNAUTHORIZED_ACTIVE_PLAN_MUTATIONS": 0,
+    "UNAUTHORIZED_SCHEDULE_SELECTION_ATTEMPTS": 0,
+    "VALIDATION_REJECTION_RATE": {
+      "denominator": 160,
+      "numerator": 63,
+      "value": 0.39375
+    }
+  },
+  "observed_llm_semantic_wrong_but_feasible_count": 5,
+  "paper_authority_commit": "1392f2255af1e5c2c1b1ef4e7e1c14234e25f78e",
+  "paper_core_validation_gate": "PASS",
+  "provider": {
+    "endpoint_class": "OpenAI-compatible chat completions",
+    "endpoint_domain": "api.deepseek.com",
+    "model_id": "deepseek-v4-flash",
+    "prompt_contract_version": "A22_S5_EVENT_EXTRACTION_CONTRACT_V1",
+    "provider_class": "PaperS5ExternalLLMProvider",
+    "provider_id": "EXTERNAL_LLM",
+    "provider_source_hash": "e389548be5b8fc40500e986a056171ba2f7b8d97f29f261be80f7c1ff4f29a5e",
+    "response_format": {
+      "type": "json_object"
+    },
+    "seed": "UNSUPPORTED_NOT_SET",
+    "temperature": 0,
+    "timeout_seconds": 120.0,
+    "top_p": null
+  },
+  "semantic_error_taxonomy_counts": {
+    "HALLUCINATED_FIELD": 3,
+    "OMITTED_FIELD": 3,
+    "UNSUPPORTED_INTENT_MISINTERPRETATION": 3,
+    "WRONG_EVENT_TYPE": 3,
+    "WRONG_NUMERIC_VALUE": 5
+  },
+  "sut_fingerprint_unchanged": true,
+  "system_authority_commit": "7ff79ee8ca81ea976c3791a5064772dbfb126082",
+  "system_modified": false,
+  "validator_interception": {
+    "DETECTABLE_ERROR_INTERCEPTION_RATE": {
+      "denominator": 11,
+      "numerator": 6,
+      "value": 0.5454545454545454
+    },
+    "DETERMINISTICALLY_BLOCKED_ERROR_COUNT": 6,
+    "OTHER_INTERCEPTION_COUNT": 0,
+    "PROVIDER_OUTPUT_UNPARSABLE_OR_NO_REQUEST_COUNT": 0,
+    "SEMANTIC_ERROR_COUNT": 11,
+    "SILENT_SEMANTIC_ERROR_PROPAGATION_COUNT": 5,
+    "SILENT_SEMANTIC_ERROR_PROPAGATION_RATE": {
+      "denominator": 11,
+      "numerator": 5,
+      "value": 0.45454545454545453
+    }
+  },
+  "verification": {
+    "authority_chain_unchanged": true,
+    "completed_at": "2026-08-24T13:34:53.236733+00:00",
+    "git_diff_check": "PASS",
+    "git_diff_check_output": "warning: in the working copy of 'scripts/sut_adapter.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'tests/test_case_schema.py', LF will be replaced by CRLF the next time Git touches it",
+    "manifest_version": "FINAL_VERIFICATION_V1",
+    "paper_test_exit_code": 0,
+    "paper_test_log_sha256": "4632162d1d9931d6061c95b45cdc7c795195ce00b3eea5e8787771d070267625",
+    "paper_test_result": "15 passed in 0.16s",
+    "relevant_sut_source_hashes": {
+      "acceptance/benchmark/reference/feasibility_validator.py": "dd57998f0df86a99062c2ef62fa8f120deab10bd3d1aa4a85ab11ba128cf3b0e",
+      "src/scheduling_system_post_mvp/optimizer/profile_aware_cp_sat.py": "b5ebd0ef1ca15cc267b7ce9e001e31114f87aae0fb81e1ee80fed2762c0dbb01",
+      "src/scheduling_system_post_mvp/services/active_plan_lifecycle.py": "487cde61e9f8a17ca21b45ea2c9a764770a993a75e12ea1f1267bd14bf59d5a1",
+      "src/scheduling_system_post_mvp/services/execution_progress_rescheduling.py": "fbb8cfec23e8e84deb6e855c8ecd7eed3bb4f3fd31314264b6e8fe5122d17701",
+      "src/scheduling_system_post_mvp/services/external_llm_runtime.py": "1b444c3908593a55c0690e0693fea4475d5e52bb6490e3a0468855042be5f651",
+      "src/scheduling_system_post_mvp/services/industrial_dataset_loader.py": "7e53e1d1ab7c2095983a0edd3e715db70f75885066e97bac4b10437362914e2c",
+      "src/scheduling_system_post_mvp/services/llm_provider_interface.py": "107edc1ec493a9cc373989f45499e4ad24918ad5b8ec1c8afa1ba72396c4f7c2",
+      "src/scheduling_system_post_mvp/services/natural_language_event_ingress.py": "a37024f7185ac8b01f7aa8ffab051e226f979991d09112f6590ffe170734c3a9",
+      "src/scheduling_system_post_mvp/services/unified_scheduling.py": "800f84e971bcb0fc4210f2fc3576f6400029e5adc917f09e51f74a50f0ed9e75"
+    },
+    "sut_fingerprint_after": "36431f4b2fe7bcb58a3c571478d4eb7ed2698a39f1333df9c01ad7f5420e7571",
+    "sut_fingerprint_before": "36431f4b2fe7bcb58a3c571478d4eb7ed2698a39f1333df9c01ad7f5420e7571",
+    "sut_fingerprint_unchanged": true,
+    "system_authority_commit": "7ff79ee8ca81ea976c3791a5064772dbfb126082",
+    "system_test_exit_code": 0,
+    "system_test_log_sha256": "72bda4cb185c2dc769e98080b0a53e60c8bdd97ef19287f137751a21bc4134e2",
+    "system_test_result": "274 passed, 2 warnings in 67.11s (0:01:07)",
+    "verification_pass": true
+  },
+  "wilson_95_intervals": {
+    "ATTACK_BLOCK_RATE": {
+      "confidence": 0.95,
+      "lower": 0.9123783988027135,
+      "method": "Wilson",
+      "upper": 1.0
+    },
+    "FALSE_REJECTION_RATE": {
+      "confidence": 0.95,
+      "lower": 0.027786123963188192,
+      "method": "Wilson",
+      "upper": 0.1247681544589592
+    },
+    "OPTIMIZER_ORIGIN_RATE_FOR_ACCEPTED_SCHEDULES": {
+      "confidence": 0.95,
+      "lower": 0.9619059574740523,
+      "method": "Wilson",
+      "upper": 1.0
+    },
+    "SEMANTIC_CORRECT_AND_FEASIBLE_RATE": {
+      "confidence": 0.95,
+      "lower": 0.8500189229905127,
+      "method": "Wilson",
+      "upper": 0.9589065385156194
+    },
+    "STRUCTURED_EXACT_MATCH": {
+      "confidence": 0.95,
+      "lower": 0.8500189229905127,
+      "method": "Wilson",
+      "upper": 0.9589065385156194
+    }
+  }
+}

@@ -1,0 +1,8 @@
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+This minimal research reproducibility package, including its data, metadata, documentation, and verification script, is made available under the Creative Commons Attribution 4.0 International license.
+
+You may share and adapt the material for any purpose provided appropriate credit is given and changes are indicated.
+
+License information:
+https://creativecommons.org/licenses/by/4.0/

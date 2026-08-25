@@ -1,0 +1,71 @@
+{
+  "accepted_chain_count": 42,
+  "gate": "PASS",
+  "manifest_version": "A26_AUDIT_EVIDENCE_V1",
+  "metrics": {
+    "AUDIT_CHAIN_COMPLETENESS_RATE": {
+      "denominator": 42,
+      "numerator": 42,
+      "value": 1.0
+    },
+    "INPUT_TO_INSTANCE_LINK_RATE": {
+      "denominator": 42,
+      "numerator": 42,
+      "value": 1.0
+    },
+    "INSTANCE_TO_PLAN_LINK_RATE": {
+      "denominator": 42,
+      "numerator": 42,
+      "value": 1.0
+    },
+    "MISSING_FIELD_COUNTS": {},
+    "PLANDELTA_RECOMPUTATION_CONSISTENCY_RATE": {
+      "denominator": 42,
+      "numerator": 42,
+      "value": 1.0
+    },
+    "REPLAYABLE_DERIVED_AUDIT_RATE": {
+      "denominator": 4,
+      "numerator": 4,
+      "value": 1.0
+    },
+    "REPLAY_SUBSET": {
+      "accepted_chain_count": 4,
+      "blocked_before_solver_count": 4,
+      "definition": "accepted non-repeat MIDDLE/MEDIUM matrix chains",
+      "requested_scenario_profile_units": 8
+    },
+    "SOLVER_EVIDENCE_COMPLETENESS_RATE": {
+      "denominator": 42,
+      "numerator": 42,
+      "value": 1.0
+    },
+    "accepted_dynamic_run_count": 42,
+    "optional_unknown_policy": "UNKNOWN is retained and does not fail required-field completeness"
+  },
+  "preflight": {
+    "captured_at_utc": "2026-08-24T14:22:13.403134+00:00",
+    "cpu_count": 8,
+    "ortools_version": "9.15.6755",
+    "paper_authority_commit": "78d198bd840a5b8db79eb9a40035fed1fa0b2ce3",
+    "paper_head_before_goal_commit": "78d198bd840a5b8db79eb9a40035fed1fa0b2ce3",
+    "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "relevant_sut_source_hashes": {
+      "acceptance/benchmark/reference/exact_numeric.py": "b7ca41d7efd27cc3e4e1c871f78ba7cd65c91bb673bd434bc292e71ad4e5ef3b",
+      "acceptance/benchmark/reference/feasibility_validator.py": "dd57998f0df86a99062c2ef62fa8f120deab10bd3d1aa4a85ab11ba128cf3b0e",
+      "acceptance/benchmark/reference/objective_evaluator.py": "b0b7aa793a132d1f42eee3807e24077341ad0084b549e34e3c3be9e4cf1415da",
+      "acceptance/benchmark/reference/profile_encoding.py": "0b2a77b873455ebb6a2665cbc92f4c1f02a5cfd9b75e78da224268fe7bcdf3bc",
+      "acceptance/benchmark/reference/reference_model.py": "cd746f4adb3bc44df7d4f86953cc64ef5d184a3e7564701aa2039849e8069fce",
+      "src/scheduling_system_post_mvp/optimizer/profile_aware_cp_sat.py": "b5ebd0ef1ca15cc267b7ce9e001e31114f87aae0fb81e1ee80fed2762c0dbb01",
+      "src/scheduling_system_post_mvp/services/active_plan_lifecycle.py": "487cde61e9f8a17ca21b45ea2c9a764770a993a75e12ea1f1267bd14bf59d5a1",
+      "src/scheduling_system_post_mvp/services/execution_progress.py": "a5373825d6cc20fd536f5f1763885f506e31643c9f9fcb954e40633de646575c",
+      "src/scheduling_system_post_mvp/services/execution_progress_rescheduling.py": "fbb8cfec23e8e84deb6e855c8ecd7eed3bb4f3fd31314264b6e8fe5122d17701",
+      "src/scheduling_system_post_mvp/services/industrial_dataset_loader.py": "7e53e1d1ab7c2095983a0edd3e715db70f75885066e97bac4b10437362914e2c",
+      "src/scheduling_system_post_mvp/services/public_fjsp_closed_loop_validation.py": "826448eeb8b48572c15422f2f709e55cc274dcd0d15ee736b22f0d1533bb5da3",
+      "src/scheduling_system_post_mvp/services/unified_scheduling.py": "800f84e971bcb0fc4210f2fc3576f6400029e5adc917f09e51f74a50f0ed9e75"
+    },
+    "sut_fingerprint_before": "36431f4b2fe7bcb58a3c571478d4eb7ed2698a39f1333df9c01ad7f5420e7571",
+    "system_authority_commit": "7ff79ee8ca81ea976c3791a5064772dbfb126082"
+  },
+  "representation": "AUDIT_CHAIN_V1"
+}
