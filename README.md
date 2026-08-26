@@ -1,79 +1,37 @@
-# Property-Separated Assurance — Minimal Reproducibility Package V1
+# Property-Separated Assurance — Reproducibility Package V2
 
-This package contains the frozen evidence needed to verify the principal reported results of a study on property-separated assurance for semantic-to-optimization manufacturing scheduling.
+This versioned package supports the final manuscript evidence for property-separated assurance in semantic-to-optimization manufacturing scheduling.
 
-It intentionally excludes the manuscript, figures, supplementary submission files, revision reports, and historical internal artifacts.
+## Versions
 
-## Verify the frozen evidence
+- `v1.0.0` is the historical legacy minimal reproducibility package for semantic, authority, P2, dynamic accounting, reconstruction, and replay evidence.
+- `v2.0.0` carries that evidence forward and adds the exact-artifact P1/OB specification, controlled P3 negative controls, and bounded assurance implementation-cost evidence.
 
-Requirements: Python 3, standard library only.
+## Verify
 
-From the package root, run:
+Requirements: Python 3 and the standard library. No network, language-model call, optimizer, SUT checkout, or experiment rerun is required.
 
 ```bash
-python scripts/verify_frozen_evidence.py
+python scripts/verify_repro_v2.py
 ```
 
-Expected final status:
+Expected terminal status:
 
 ```text
-VERIFY_FROZEN_EVIDENCE=PASS
+VERIFY_PROPERTY_SEPARATED_ASSURANCE_REPRO_V2=PASS
 ```
 
-The verifier checks the frozen file identities and recomputes the principal evidence counts, including:
+The Git tree verifies all compact evidence and records the timing ledger as a versioned release-only asset. The V2 release ZIP includes the complete timing ledger and additionally recomputes the frozen latency statistics from its 131,200 rows.
 
-- semantic cases: 160 total; V=100, I=60, A=40;
-- structured exactness: 92/100;
-- semantic errors: 11 = 8 V + 3 I;
-- deterministic interception: 6/11;
-- schema-valid propagation: 5/11 = 2 V + 3 I;
-- accepted optimizer-origin schedules: 97/97;
-- controlled authority challenges blocked: 40/40;
-- controlled semantic–feasibility witnesses: 12/12;
-- dynamic matrix accounting: 72 matrix units and 24 repeat units;
-- accepted reconstruction chains: 42;
-- five reconstruction checks: 42/42 each;
-- bounded replay subset: 4/4.
+## Evidence classes
 
-## Package structure
+- fixed semantic evidence and validator outcomes;
+- authority exclusion and retained optimizer-origin/lifecycle witnesses;
+- P2 non-implication witnesses;
+- legacy accepted-chain reconstruction and bounded replay;
+- controlled P3 clean and M1–M9 negative controls;
+- bounded component-only latency, allocation, and observed-range descriptive scaling evidence.
 
-```text
-data/
-  semantic/
-  authority/
-  dynamic/
-  reconstruction/
-manifests/
-scripts/
-source_identity/
-CHECKSUMS_SHA256.txt
-LICENSE.txt
-README.md
-```
+## Claim boundary
 
-## Reproducibility scope
-
-The package is designed to verify the frozen evidence actually used in the study without rerunning the external language model or the scheduling experiments.
-
-The archived language-model outputs are the fixed evidence realization. A new provider call would be a new realization and must not replace the archived evidence.
-
-The package does not claim provider-general semantic accuracy, universal security, scheduling-performance superiority, global optimizer correctness, causal or tamper-proof provenance, industrial deployment, or cross-system empirical generality.
-
-## Frozen implementation identity
-
-- SUT evidence revision: `7ff79ee8ca81ea976c3791a5064772dbfb126082`
-- recorded evidence-generation fingerprint: `36431f4b2fe7bcb58a3c571478d4eb7ed2698a39f1333df9c01ad7f5420e7571`
-- external semantic model: `deepseek-v4-flash`
-- temperature: `0`
-- output format: JSON object
-- semantic contract version: `A22_S5_EVENT_EXTRACTION_CONTRACT_V1`
-
-No API key, token, password, or secret credential is included.
-
-## Version
-
-`v1.0.0`
-
-## License
-
-See `LICENSE.txt`.
+The package verifies finite frozen evidence from one reference implementation and declared environment. It does not prove universal trustworthiness, security, tamper-proof provenance, real-time capability, industrial scalability, or production readiness. External language-model outputs are archived fixed realizations; a new provider call would create a different realization.

@@ -1,0 +1,6 @@
+# Preserve evidence bytes exactly; do not perform line-ending conversion.
+* -text
+data/assurance_overhead/artifact_summary.csv -diff
+data/assurance_overhead/benchmark_registry.json -diff
+data/assurance_overhead/component_summary.csv -diff
+data/assurance_overhead/scaling_data.csv -diff

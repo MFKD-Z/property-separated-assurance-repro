@@ -1,0 +1,10 @@
+{
+  "llm_required": false,
+  "network_required": false,
+  "optimizer_required": false,
+  "package": "Property-Separated Assurance reproducibility package",
+  "profile": "git-tree",
+  "raw_timings_location": "versioned V2 release ZIP",
+  "raw_timings_required": false,
+  "version": "v2.0.0"
+}

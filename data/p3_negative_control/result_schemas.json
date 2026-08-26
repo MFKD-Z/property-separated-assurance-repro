@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "P3_RESULT_SCHEMAS_V1",
+  "formal_population_permitted_in_batch2": false,
+  "$defs": {
+    "verdict": {"type":"string","pattern":"^(PASS|FAIL:[A-Z0-9_]+|UNEVALUABLE:.+)$"},
+    "result_row": {
+      "type": "object",
+      "required": ["run_id","paper_commit","protocol_hash","checker_spec_hash","mutation_registry_hash","source_bundle_manifest_hash","audit_chain_id","mutation_family","subcase_id","mutated_artifact","mutated_field","original_value_or_digest","mutated_value_or_digest","expected_detector","observed_detector","ob6_consistency","ob7_completeness","p3_closed_conformance","terminal_verdict","unevaluable_reason","source_artifact_hashes","mutated_artifact_hashes","timestamp_or_sequence_index"],
+      "properties": {
+        "run_id":{"type":"string"},"paper_commit":{"type":"string"},"protocol_hash":{"type":"string"},"checker_spec_hash":{"type":"string"},"mutation_registry_hash":{"type":"string"},"source_bundle_manifest_hash":{"type":"string"},"audit_chain_id":{"type":"string","pattern":"^[0-9a-f]{64}$"},"mutation_family":{"type":"string"},"subcase_id":{"type":"string"},"mutated_artifact":{"type":["string","null"]},"mutated_field":{"type":["string","null"]},"original_value_or_digest":{},"mutated_value_or_digest":{},"expected_detector":{"type":"array","items":{"type":"string"}},"observed_detector":{"type":"array","items":{"type":"string"}},"detector_classification":{"enum":["EXPECTED_DETECTOR_MATCH","INCIDENTAL_DETECTOR_MISMATCH","NO_DETECTOR"]},"ob6_consistency":{"enum":["PASS","FAIL","UNEVALUABLE"]},"ob7_completeness":{"enum":["PASS","FAIL","UNEVALUABLE"]},"p3_closed_conformance":{"enum":["PASS","FAIL","UNEVALUABLE"]},"terminal_verdict":{"$ref":"#/$defs/verdict"},"unevaluable_reason":{"type":["string","null"]},"source_artifact_hashes":{"type":"object"},"mutated_artifact_hashes":{"type":"object"},"timestamp_or_sequence_index":{"type":["string","integer"]}
+      },
+      "additionalProperties": true
+    }
+  },
+  "files": {
+    "manifest.json":{"type":"object","required":["run_id","paper_commit","formal_mutation_experiment_run","checker_spec_hash","mutation_registry_hash","source_bundle_manifest_hash"]},
+    "clean_control_results.jsonl":{"each_line":{"$ref":"#/$defs/result_row"}},
+    "mutation_results.jsonl":{"each_line":{"$ref":"#/$defs/result_row"}},
+    "mutation_ledger.csv":{"columns":["run_id","audit_chain_id","mutation_family","subcase_id","expected_detector","observed_detector","detector_classification","ob6_consistency","ob7_completeness","p3_closed_conformance","terminal_verdict","unevaluable_reason","timestamp_or_sequence_index"]},
+    "summary.json":{"type":"object","required":["families","clean_control_classification","unevaluable_count","incidental_detector_mismatch_count"]},
+    "environment.json":{"type":"object","required":["os","python_version","paper_commit","frozen_sut_commit","relevant_frozen_source_hashes","checker_spec_hash","mutation_registry_hash","source_bundle_manifest_hash"]}
+  }
+}

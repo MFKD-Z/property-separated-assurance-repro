@@ -1,0 +1,32 @@
+{
+  "analysis_spec_hash": "679e1e753bc16f0de8252e584441d896ef1ccf36527a9c2b4891e11b07437b0a",
+  "formal_run_id": "AEI_ASSURANCE_OVERHEAD_FORMAL_20260826_B5R1_V1",
+  "frozen_before_timing_utc": "2026-08-26T07:39:49.937629+00:00",
+  "harness_code_hashes": {
+    "paper_experiments/assurance_overhead/__init__.py": "bb82d4da031032bb6447b6aa7823bea1cb37359f54cd7817e42538c9bd071778",
+    "paper_experiments/assurance_overhead/allocation.py": "8428b5fbe8a1ffaf1036b398f88d3e1cd3150f0a3362ff7b21caafe8803b3e3b",
+    "paper_experiments/assurance_overhead/canonical.py": "049d60d802ed2bf2573386364631defbab00ab15e9f5048618d48db78dad68e9",
+    "paper_experiments/assurance_overhead/components.py": "d7d4ae1af03d3df7c055b82e2a6c463037a43ec5fe2ef15416de5b2beba4ac1b",
+    "paper_experiments/assurance_overhead/constants.py": "1adbe602f6cc6e5fc488c2d85f1f45e925f44456d08bb15ad954ef489907a06a",
+    "paper_experiments/assurance_overhead/dispatch.py": "2de69a20fe1e02e1e5b11893157d7c755d14b4ec93af84b6c612c2e5b09bb00e",
+    "paper_experiments/assurance_overhead/environment.py": "db9b275a77c3a4911dad8e351f0169fbed19875d1a017cf61de0012af3634fae",
+    "paper_experiments/assurance_overhead/formal_run.py": "82d3c6bfe4084a87a1edeb3121ec59b2a6e1378ad8725f018022ee3e71f03da3",
+    "paper_experiments/assurance_overhead/guards.py": "96a7d9ff3ac0bd584a7b81ae710ede4f1a018f527568feb74be215751b4ac946",
+    "paper_experiments/assurance_overhead/lifecycle_io.py": "870f74e4236241b1f8b63a9e011c0f372066349731126e2034c7c3e2074eebd2",
+    "paper_experiments/assurance_overhead/population.py": "f5445642285b067456dd6788bfbb87790c75890b6ebfd363943c42181cd53ef3",
+    "paper_experiments/assurance_overhead/preparation.py": "b4eb8e0ba922387c664ef0acf7bb496d907d26c113ce3e806818fa4372df13a9",
+    "paper_experiments/assurance_overhead/registry.py": "50bd91d2a39f9674a5ce246f1e18815edc2718fb512362011b15136dd93858dd",
+    "paper_experiments/assurance_overhead/reporting.py": "385b6f96e6c2db29ef6753d509f74e787df233c8e4248bf9d140a99ef754c12d",
+    "paper_experiments/assurance_overhead/smoke.py": "e8f90529a55b2716e6748258ec2a0abb3d5fd7b44449a5b7f4bda717dcf59156",
+    "paper_experiments/assurance_overhead/statistics.py": "14b875279c85e3e5f35683dee0d27818c06e2077cd61be9c9eefd153011207dd",
+    "paper_experiments/assurance_overhead/timing.py": "0912b0a4d767633d50c0f92353a6b0715408b4d9224998ba8952dc99607f7a01",
+    "paper_experiments/assurance_overhead/worker.py": "a455be9a9202ae9424815b8d38adab264c9547f39dcfcb47d0cefc7134bdb3ec",
+    "scripts/run_assurance_overhead_formal_closure.py": "eafb9246c8dfd95cbf5627f7959e7b29cd12666ec6f3da090a23f5616595c42c"
+  },
+  "manifest_version": "REPAIRED_HARNESS_HASH_MANIFEST_V1",
+  "old_rows_reused": false,
+  "previous_invalid_run_id": "AEI_ASSURANCE_OVERHEAD_FORMAL_20260826_B5_V1",
+  "previous_invalid_run_manifest_hash": "99b43a8ce94fcd85551b1b667f86bedf64439c73d57a5dc566af4cc630be4554",
+  "protocol_amendment_hash": "0382dd33aa391432ec200e78776a6a8c425b1cc5e8bc5f607d4d735c96ee4316",
+  "registry_hash": "92b72fa37f0681905961e9498ae055ef013844294d39ef7ad0b3fa51915f59af"
+}

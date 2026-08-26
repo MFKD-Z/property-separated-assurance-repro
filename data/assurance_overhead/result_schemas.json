@@ -1,0 +1,77 @@
+{
+  "schema_version": "ASSURANCE_OVERHEAD_RESULT_SCHEMAS_V1",
+  "formal_directory": "artifacts/experiments/assurance_overhead_v1",
+  "formal_overhead_experiment_run": false,
+  "files": {
+    "manifest.json": {
+      "format": "json",
+      "required": ["run_id", "protocol_hash", "registry_hash", "analysis_spec_hash", "environment_hash", "formal_run", "row_counts", "failure_ledger_hash"]
+    },
+    "benchmark_registry.json": {
+      "format": "json",
+      "authority": "config/experiments/assurance_overhead_registry_v1.json",
+      "required": ["registry_version", "registry_content_sha256", "measurement_units"]
+    },
+    "raw_timings.jsonl": {
+      "format": "jsonl_append_only",
+      "required": [
+        "formal_run_id", "component_id", "artifact_id", "source_population", "stratum",
+        "process_block", "repetition_index", "ab_ba_order", "measurement_role", "elapsed_ns",
+        "paired_h0_elapsed_ns", "incremental_elapsed_ns", "raw_component_latency_ns",
+        "paired_h0_latency_ns", "composed_path_latency_ns",
+        "paired_component_minus_load_difference_ns", "not_an_overhead_estimate",
+        "artifact_digest", "canonical_bytes",
+        "N_jobs", "N_operations", "N_modes", "schedule_operation_count", "replacement_block",
+        "sequence_index", "environment_id"
+      ],
+      "measurement_role_enum": ["H0", "COMPONENT"],
+      "negative_incremental_elapsed_ns_allowed": true,
+      "compatibility_mapping": "incremental_elapsed_ns = paired_component_minus_load_difference_ns",
+      "not_an_overhead_estimate": true
+    },
+    "allocation_results.jsonl": {
+      "format": "jsonl",
+      "required": ["component_id", "artifact_id", "peak_traced_allocation_bytes", "profiling_pass"],
+      "profiling_pass": "SEPARATE_NON_LATENCY"
+    },
+    "component_summary.csv": {
+      "format": "csv",
+      "required_columns": ["component_id", "stratum", "metric_role", "median", "q1", "q3", "iqr", "mad", "p95", "n", "artifact_count"]
+    },
+    "artifact_summary.csv": {
+      "format": "csv",
+      "required_columns": ["component_id", "artifact_id", "raw_component_median_latency_ns", "paired_h0_median_latency_ns", "composed_path_median_latency_ns", "paired_component_minus_load_difference_median_ns", "peak_traced_allocation_bytes", "canonical_bytes"]
+    },
+    "scaling_data.csv": {
+      "format": "csv",
+      "required_columns": ["component_id", "artifact_id", "descriptor", "descriptor_value", "artifact_median_component_latency_ns", "observed_range_only"]
+    },
+    "environment.json": {
+      "format": "json",
+      "required": [
+        "os", "cpu_model", "logical_cpu_count", "ram_bytes", "python_version", "dependency_versions",
+        "paper_commit", "frozen_sut_commit", "protocol_hash", "registry_hash", "analysis_spec_hash", "harness_source_hashes",
+        "garbage_collection_policy", "timer", "process_block_implementation", "network_disabled_status",
+        "optimizer_disabled_status", "semantic_provider_disabled_status", "lifecycle_isolation_path",
+        "lifecycle_isolation_status"
+      ]
+    },
+    "summary.json": {
+      "format": "json",
+      "required": ["run_id", "metric_hierarchy", "component_summaries", "artifact_level_bootstrap", "descriptive_scaling", "claim_boundary"]
+    },
+    "failure_ledger.json": {
+      "format": "json",
+      "required": ["run_id", "failed_blocks", "replacement_blocks", "mechanical_exclusions"],
+      "allowed_exclusion_reasons": ["PROCESS_CRASH", "INCOMPLETE_BLOCK", "HARNESS_EXCEPTION", "CORRUPTED_RESULT_ROW"]
+    }
+  },
+  "outlier_policy": "NO_POST_HOC_DELETION",
+  "bootstrap_resampling_unit": "ARTIFACT",
+  "primary_latency_metric": "raw_component_latency_ns",
+  "secondary_context_metric": "paired_h0_latency_ns",
+  "secondary_derived_software_path_metric": "composed_path_latency_ns",
+  "diagnostic_metric": "paired_component_minus_load_difference_ns",
+  "diagnostic_metric_is_overhead_estimate": false,
+  "scaling_scope": "DESCRIPTIVE_OBSERVED_RANGE_ONLY"
+}

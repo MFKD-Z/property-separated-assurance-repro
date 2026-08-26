@@ -1,0 +1,31 @@
+{
+  "checker_spec_hash": "13bc79cd08375983ab5d8200995c6c7003f0e42dc939f97b285d1a7e20cfef18",
+  "environment_identifier": "P3_FORMAL_ENVIRONMENT_PUBLIC_PROJECTION_V1",
+  "frozen_sut_commit": "7ff79ee8ca81ea976c3791a5064772dbfb126082",
+  "lifecycle_state_activated": false,
+  "llm_called": false,
+  "mutation_registry_hash": "5874fdb1b9267878db38598a764134bb37bc8cef890abbfcf30dd7a8fb4dca4f",
+  "network_metadata_used": false,
+  "optimizer_invoked": false,
+  "original_environment_sha256": "2875af8f0b5019a23f6dcf5d359b20dbf9596dd244f65b90732c4cdf6023fb1e",
+  "os": "Windows-10-10.0.19045-SP0",
+  "privacy_note": "Machine hostname and internal Git-status snapshots are deliberately omitted.",
+  "production_scheduling_invoked": false,
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "relevant_frozen_source_hashes": {
+    "acceptance/benchmark/reference/exact_numeric.py": "b7ca41d7efd27cc3e4e1c871f78ba7cd65c91bb673bd434bc292e71ad4e5ef3b",
+    "acceptance/benchmark/reference/feasibility_validator.py": "dd57998f0df86a99062c2ef62fa8f120deab10bd3d1aa4a85ab11ba128cf3b0e",
+    "acceptance/benchmark/reference/objective_evaluator.py": "b0b7aa793a132d1f42eee3807e24077341ad0084b549e34e3c3be9e4cf1415da",
+    "acceptance/benchmark/reference/profile_encoding.py": "0b2a77b873455ebb6a2665cbc92f4c1f02a5cfd9b75e78da224268fe7bcdf3bc",
+    "acceptance/benchmark/reference/reference_model.py": "cd746f4adb3bc44df7d4f86953cc64ef5d184a3e7564701aa2039849e8069fce",
+    "src/scheduling_system_post_mvp/optimizer/profile_aware_cp_sat.py": "b5ebd0ef1ca15cc267b7ce9e001e31114f87aae0fb81e1ee80fed2762c0dbb01",
+    "src/scheduling_system_post_mvp/services/active_plan_lifecycle.py": "487cde61e9f8a17ca21b45ea2c9a764770a993a75e12ea1f1267bd14bf59d5a1",
+    "src/scheduling_system_post_mvp/services/execution_progress.py": "a5373825d6cc20fd536f5f1763885f506e31643c9f9fcb954e40633de646575c",
+    "src/scheduling_system_post_mvp/services/execution_progress_rescheduling.py": "fbb8cfec23e8e84deb6e855c8ecd7eed3bb4f3fd31314264b6e8fe5122d17701",
+    "src/scheduling_system_post_mvp/services/industrial_dataset_loader.py": "7e53e1d1ab7c2095983a0edd3e715db70f75885066e97bac4b10437362914e2c",
+    "src/scheduling_system_post_mvp/services/public_fjsp_closed_loop_validation.py": "826448eeb8b48572c15422f2f709e55cc274dcd0d15ee736b22f0d1533bb5da3",
+    "src/scheduling_system_post_mvp/services/unified_scheduling.py": "800f84e971bcb0fc4210f2fc3576f6400029e5adc917f09e51f74a50f0ed9e75"
+  },
+  "run_id": "AEI_P3_FORMAL_20260826T034308Z_9b5f3c2bdfbe",
+  "source_bundle_manifest_hash": "e5b62f6f428255892b217f176a9d166369653d0f33343a6e57801fd1d170dd51"
+}

@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite the associated manuscript and this versioned package."
+title: "Property-Separated Assurance — Reproducibility Package V2"
+type: dataset
+version: "2.0.0"
+date-released: 2026-08-26
+authors:
+  - name: "MFKD-Z"
+repository-code: "https://github.com/MFKD-Z/property-separated-assurance-repro"
+url: "https://github.com/MFKD-Z/property-separated-assurance-repro/releases/tag/v2.0.0"
+license: CC-BY-4.0

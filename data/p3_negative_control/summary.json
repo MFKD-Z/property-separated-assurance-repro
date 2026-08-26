@@ -1,0 +1,307 @@
+{
+  "bounded_claim": "The preregistered paper-side reconstruction checker detected the specified controlled corruptions under the declared reconstruction relation over the retained accepted realization set.",
+  "clean_control": {
+    "classification": "PASS",
+    "pass1_pass_count": 42,
+    "pass2_pass_count": 42,
+    "reproducible_count": 42
+  },
+  "clean_control_classification": "PASS",
+  "families": {
+    "M1": {
+      "detection_exact_two_sided_95pct_clopper_pearson": [
+        0.98908123926261,
+        1.0
+      ],
+      "detection_proportion": 1.0,
+      "n_attempted_scientific_units": 336,
+      "n_detected_as_preregistered": 336,
+      "n_incidental_detector_mismatch": 0,
+      "n_undetected": 0,
+      "n_unevaluable": 0,
+      "verdict_reproducibility_count": 336,
+      "verdict_reproducibility_rate": 1.0
+    },
+    "M2": {
+      "detection_exact_two_sided_95pct_clopper_pearson": [
+        0.9159161450596474,
+        1.0
+      ],
+      "detection_proportion": 1.0,
+      "n_attempted_scientific_units": 42,
+      "n_detected_as_preregistered": 42,
+      "n_incidental_detector_mismatch": 0,
+      "n_undetected": 0,
+      "n_unevaluable": 0,
+      "verdict_reproducibility_count": 42,
+      "verdict_reproducibility_rate": 1.0
+    },
+    "M3": {
+      "detection_exact_two_sided_95pct_clopper_pearson": [
+        0.9159161450596474,
+        1.0
+      ],
+      "detection_proportion": 1.0,
+      "n_attempted_scientific_units": 42,
+      "n_detected_as_preregistered": 42,
+      "n_incidental_detector_mismatch": 0,
+      "n_undetected": 0,
+      "n_unevaluable": 0,
+      "verdict_reproducibility_count": 42,
+      "verdict_reproducibility_rate": 1.0
+    },
+    "M4": {
+      "detection_exact_two_sided_95pct_clopper_pearson": [
+        0.9159161450596474,
+        1.0
+      ],
+      "detection_proportion": 1.0,
+      "n_attempted_scientific_units": 42,
+      "n_detected_as_preregistered": 42,
+      "n_incidental_detector_mismatch": 0,
+      "n_undetected": 0,
+      "n_unevaluable": 0,
+      "verdict_reproducibility_count": 42,
+      "verdict_reproducibility_rate": 1.0
+    },
+    "M5": {
+      "detection_exact_two_sided_95pct_clopper_pearson": [
+        0.9159161450596474,
+        1.0
+      ],
+      "detection_proportion": 1.0,
+      "n_attempted_scientific_units": 42,
+      "n_detected_as_preregistered": 42,
+      "n_incidental_detector_mismatch": 0,
+      "n_undetected": 0,
+      "n_unevaluable": 0,
+      "verdict_reproducibility_count": 42,
+      "verdict_reproducibility_rate": 1.0
+    },
+    "M6": {
+      "detection_exact_two_sided_95pct_clopper_pearson": [
+        0.9159161450596474,
+        1.0
+      ],
+      "detection_proportion": 1.0,
+      "n_attempted_scientific_units": 42,
+      "n_detected_as_preregistered": 42,
+      "n_incidental_detector_mismatch": 0,
+      "n_undetected": 0,
+      "n_unevaluable": 0,
+      "verdict_reproducibility_count": 42,
+      "verdict_reproducibility_rate": 1.0
+    },
+    "M7": {
+      "detection_exact_two_sided_95pct_clopper_pearson": [
+        0.9159161450596474,
+        1.0
+      ],
+      "detection_proportion": 1.0,
+      "n_attempted_scientific_units": 42,
+      "n_detected_as_preregistered": 42,
+      "n_incidental_detector_mismatch": 0,
+      "n_undetected": 0,
+      "n_unevaluable": 0,
+      "verdict_reproducibility_count": 42,
+      "verdict_reproducibility_rate": 1.0
+    },
+    "M8": {
+      "detection_exact_two_sided_95pct_clopper_pearson": [
+        0.9159161450596474,
+        1.0
+      ],
+      "detection_proportion": 1.0,
+      "n_attempted_scientific_units": 42,
+      "n_detected_as_preregistered": 42,
+      "n_incidental_detector_mismatch": 0,
+      "n_undetected": 0,
+      "n_unevaluable": 0,
+      "verdict_reproducibility_count": 42,
+      "verdict_reproducibility_rate": 1.0
+    },
+    "M9": {
+      "detection_exact_two_sided_95pct_clopper_pearson": [
+        0.992047204584249,
+        1.0
+      ],
+      "detection_proportion": 1.0,
+      "n_attempted_scientific_units": 462,
+      "n_detected_as_preregistered": 462,
+      "n_incidental_detector_mismatch": 0,
+      "n_undetected": 0,
+      "n_unevaluable": 0,
+      "verdict_reproducibility_count": 462,
+      "verdict_reproducibility_rate": 1.0
+    }
+  },
+  "frozen_sut_commit": "7ff79ee8ca81ea976c3791a5064772dbfb126082",
+  "incidental_detector_mismatch_count": 0,
+  "mutation_reproducibility_mismatch_count": 0,
+  "paper_commit": "7abc1e876f185dc17213376c2a0b7a82a00f0679",
+  "run_id": "AEI_P3_FORMAL_20260826T034308Z_9b5f3c2bdfbe",
+  "strict_scientific_gate": "PASS",
+  "subcases": {
+    "M1": [
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M1.01",
+        "undetected": 0,
+        "unevaluable": 0
+      },
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M1.02",
+        "undetected": 0,
+        "unevaluable": 0
+      },
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M1.03",
+        "undetected": 0,
+        "unevaluable": 0
+      },
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M1.04",
+        "undetected": 0,
+        "unevaluable": 0
+      },
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M1.05",
+        "undetected": 0,
+        "unevaluable": 0
+      },
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M1.06",
+        "undetected": 0,
+        "unevaluable": 0
+      },
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M1.07",
+        "undetected": 0,
+        "unevaluable": 0
+      },
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M1.08",
+        "undetected": 0,
+        "unevaluable": 0
+      }
+    ],
+    "M9": [
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M9.01",
+        "undetected": 0,
+        "unevaluable": 0
+      },
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M9.02",
+        "undetected": 0,
+        "unevaluable": 0
+      },
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M9.03",
+        "undetected": 0,
+        "unevaluable": 0
+      },
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M9.04",
+        "undetected": 0,
+        "unevaluable": 0
+      },
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M9.05",
+        "undetected": 0,
+        "unevaluable": 0
+      },
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M9.06",
+        "undetected": 0,
+        "unevaluable": 0
+      },
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M9.07",
+        "undetected": 0,
+        "unevaluable": 0
+      },
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M9.08",
+        "undetected": 0,
+        "unevaluable": 0
+      },
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M9.09",
+        "undetected": 0,
+        "unevaluable": 0
+      },
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M9.10",
+        "undetected": 0,
+        "unevaluable": 0
+      },
+      {
+        "attempted": 42,
+        "detected_as_preregistered": 42,
+        "incidental_detector_mismatch": 0,
+        "subcase_id": "M9.11",
+        "undetected": 0,
+        "unevaluable": 0
+      }
+    ]
+  },
+  "total_clean_checker_executions": 84,
+  "total_mutation_checker_executions": 2184,
+  "total_unique_mutated_scientific_units": 1092,
+  "undetected_count": 0,
+  "unevaluable_count": 0
+}

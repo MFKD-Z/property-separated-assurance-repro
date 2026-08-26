@@ -1,0 +1,12 @@
+{
+  "identity_note": "Paper, SUT, and public-package Git identities are distinct.",
+  "manuscript_sha256": "136f32d56cc044878417fce1c5e93ad4dbb79080aeae842e0535359285288447",
+  "p3_formal_manifest_sha256": "6ababc4c1f9b5eb225f645fe62b7450d565dfcc85f59d3297d6e719a5cae9d8e",
+  "paper_scientific_closure_commit": "608335f081f48730753928330c0099232f2e1ac9",
+  "public_v1_release_asset_sha256": "ff67d2a46e1b32116ece5f5d0a984a3fe3a64af35e307fce3125edc99ff7e898",
+  "public_v1_tag": "v1.0.0",
+  "public_v1_tag_commit": "aa341d2663b40411eeb04a198f47b212a02bae1d",
+  "public_v2_version": "v2.0.0",
+  "sut_evidence_revision": "7ff79ee8ca81ea976c3791a5064772dbfb126082",
+  "valid_overhead_manifest_sha256": "f14fd4dd82b38971ba3daaa878d90fdbcd6de31a182ed87473f70cc6ea46d65f"
+}

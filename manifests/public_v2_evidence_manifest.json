@@ -1,0 +1,12 @@
+{
+  "invalid_overhead_rows_included": 0,
+  "legacy_v1_commit": "aa341d2663b40411eeb04a198f47b212a02bae1d",
+  "legacy_v1_preserved": true,
+  "new_experiment_runs": 0,
+  "overhead_manifest_sha256": "f14fd4dd82b38971ba3daaa878d90fdbcd6de31a182ed87473f70cc6ea46d65f",
+  "overhead_raw_storage": "release ZIP only",
+  "overhead_raw_timings_sha256": "2508d99d8d5da2034113a0077f2f646e222666bde3702b35b938511d6b03e87a",
+  "p3_manifest_sha256": "6ababc4c1f9b5eb225f645fe62b7450d565dfcc85f59d3297d6e719a5cae9d8e",
+  "process_block_storage": "omitted as redundant row duplication; frozen hashes retained in formal manifest",
+  "version": "v2.0.0"
+}

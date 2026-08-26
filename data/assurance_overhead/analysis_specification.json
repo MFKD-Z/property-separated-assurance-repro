@@ -1,0 +1,217 @@
+{
+  "analysis_spec_version": "ASSURANCE_OVERHEAD_ANALYSIS_SPEC_V1",
+  "status": "FROZEN_PRE_FORMAL_RESULT",
+  "authority": {
+    "paper_commit_before_amendment": "ab25d697b8691949654ab1f8cffc1e9cb5ab6159",
+    "original_protocol_path": "docs/experiments/AEI_ASSURANCE_OVERHEAD_SCALABILITY_PROTOCOL_V1.md",
+    "original_protocol_sha256": "d5ac25dc0ab0c1f51b370be1e3a2b4eb5803e6090500fdb1109b256269179419",
+    "amendment_path": "docs/experiments/AEI_ASSURANCE_OVERHEAD_PROTOCOL_AMENDMENT_V1.md",
+    "amendment_timing": "PRE_FORMAL_RESULT",
+    "formal_overhead_experiment_run_before_amendment": false,
+    "formal_overhead_experiment_run": false
+  },
+  "metric_hierarchy": {
+    "primary_latency": {
+      "field": "raw_component_latency_ns",
+      "symbol": "T_Hk",
+      "definition": "elapsed time inside the frozen component boundary",
+      "subtract_h0": false
+    },
+    "secondary_context": {
+      "field": "paired_h0_latency_ns",
+      "symbol": "T_H0",
+      "definition": "read and parse the exact copied JSON fixture inside the frozen H0 boundary",
+      "interpretation": "ARTIFACT_LOAD_AND_JSON_PARSE_LATENCY",
+      "assurance_predicate_latency": false
+    },
+    "secondary_derived_software_path": {
+      "field": "composed_path_latency_ns",
+      "symbol": "T_PATH,k",
+      "formula": "paired_h0_latency_ns + raw_component_latency_ns",
+      "direct_single_timer_measurement": false,
+      "production_end_to_end_latency": false
+    },
+    "diagnostic_only": {
+      "field": "paired_component_minus_load_difference_ns",
+      "name": "PAIRED_COMPONENT_MINUS_LOAD_DIFFERENCE",
+      "symbol": "D_k",
+      "formula": "raw_component_latency_ns - paired_h0_latency_ns",
+      "negative_values_preserved": true,
+      "overhead_estimate": false,
+      "forbidden_labels": [
+        "incremental assurance overhead",
+        "net assurance overhead",
+        "overhead above baseline",
+        "speedup",
+        "saved latency"
+      ]
+    },
+    "compatibility_alias": {
+      "legacy_field": "incremental_elapsed_ns",
+      "canonical_field": "paired_component_minus_load_difference_ns",
+      "equality_required": true,
+      "not_an_overhead_estimate": true
+    }
+  },
+  "component_ids": [
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H5_IO",
+    "H6",
+    "H7",
+    "H8"
+  ],
+  "summary_statistics": {
+    "required_for_primary_component_latency": [
+      "median",
+      "q1",
+      "q3",
+      "iqr",
+      "mad",
+      "p95",
+      "n"
+    ],
+    "optional_same_statistics_for": [
+      "paired_h0_latency_ns",
+      "composed_path_latency_ns",
+      "paired_component_minus_load_difference_ns"
+    ],
+    "diagnostic_metric_is_primary_claim": false
+  },
+  "bootstrap": {
+    "resampling_unit": "ARTIFACT",
+    "within_artifact_collapse": "MEDIAN_ACROSS_REPETITIONS",
+    "confidence_level": 0.95,
+    "primary_target": "ARTIFACT_LEVEL_MEDIAN_COMPONENT_LATENCY",
+    "repeated_timing_observations_are_independent_scientific_units": false
+  },
+  "strata": {
+    "H1": {
+      "required_primary_strata": {
+        "H1_A22": {
+          "source_population": "A22_RETAINED_SEMANTIC_CANDIDATES_V1",
+          "eligible_artifacts": 160
+        },
+        "H1_A26": {
+          "source_population": "A26_RETAINED_ACCEPTED_BUNDLES_V1",
+          "eligible_artifacts": 42
+        }
+      },
+      "pooled_202_summary": "OPTIONAL_SECONDARY_ONLY",
+      "pooled_only_headline_allowed": false
+    },
+    "H2": {
+      "eligible_artifacts": 160,
+      "required_timing_descriptors": [
+        "expected_accept",
+        "expected_reject"
+      ],
+      "orthogonal_flag": "attack_related",
+      "attack_related_creates_independent_timing_units": false,
+      "legacy_semantic_denominators_unchanged": true
+    }
+  },
+  "eligible_artifact_counts": {
+    "H1": 202,
+    "H2": 160,
+    "H3": 42,
+    "H4": 42,
+    "H5": 42,
+    "H5_IO": 42,
+    "H6": 42,
+    "H7": 42,
+    "H8": 42
+  },
+  "timing_plan": {
+    "warmups_per_artifact_component_pair": 5,
+    "process_blocks": 5,
+    "recorded_repetitions_per_block": 20,
+    "component_measurements_per_artifact_component_pair": 100,
+    "paired_h0_measurements_per_artifact_component_pair": 100,
+    "expected_formal_component_rows": 65600,
+    "expected_formal_paired_h0_rows": 65600,
+    "expected_formal_total_timing_rows": 131200,
+    "artifact_ordering_unchanged": true,
+    "ab_ba_pairing_unchanged": true
+  },
+  "component_aggregation_rules": {
+    "H8": {
+      "interpretation": "DIRECT_MEASURED_COMPOSITE_ACCEPTED_PATH_ASSURANCE_COMPONENT",
+      "contained_execution_sequence": [
+        "H3",
+        "H4",
+        "H5",
+        "H7"
+      ],
+      "preferred_composite_path_evidence": "DIRECT_H8_MEASUREMENT",
+      "forbidden_aggregate": "H8 + H3 + H4 + H5 + H7",
+      "double_count_h8_and_decomposition_components": false,
+      "median_additivity_required": false
+    },
+    "H5_IO": {
+      "primary_reporting": "raw_component_latency_ns",
+      "interpretation": "SEPARATE_ISOLATED_PERSISTENCE_IO",
+      "subtract_h0": false,
+      "optional_composed_path": "paired_h0_latency_ns + raw_component_latency_ns",
+      "production_storage_claim_allowed": false
+    }
+  },
+  "allocation": {
+    "batch4_definitions_unchanged": true,
+    "primary_metric": "COMPONENT_SPECIFIC_PEAK_TRACED_PYTHON_ALLOCATION",
+    "separate_profiling_pass": true,
+    "subtract_h0_allocation": false
+  },
+  "scaling": {
+    "scope": "DESCRIPTIVE_OBSERVED_RANGE_ONLY",
+    "primary_latency_field": "raw_component_latency_ns",
+    "descriptors": [
+      "artifact_count",
+      "canonical_bytes",
+      "operation_count_where_defined",
+      "observed_x_min",
+      "observed_x_max",
+      "scatter_data",
+      "average_rank_spearman",
+      "theil_sen_slope",
+      "artifact_level_bootstrap_interval"
+    ],
+    "extrapolation": false,
+    "asymptotic_fit": false
+  },
+  "claim_boundary": {
+    "potential_future_statements_if_supported": [
+      "Measured component latency over the evaluated retained artifact set was ...",
+      "Measured composed artifact-load-plus-assurance path latency was ...",
+      "The evaluated assurance checks showed bounded measured latency over the observed artifact-size range."
+    ],
+    "not_authorized": [
+      "negligible overhead",
+      "negative overhead",
+      "speedup from assurance",
+      "real-time",
+      "industrial scale",
+      "production latency",
+      "general scalability",
+      "asymptotic scalability",
+      "cross-hardware generality"
+    ]
+  },
+  "immutability_and_execution_guards": {
+    "measured_boundaries_unchanged": true,
+    "eligible_populations_unchanged": true,
+    "repetition_counts_unchanged": true,
+    "artifact_ordering_unchanged": true,
+    "ab_ba_pairing_unchanged": true,
+    "batch3_evidence_immutable": true,
+    "manuscript_modified": false,
+    "sut_write_allowed": false,
+    "llm_or_provider_call_allowed": false,
+    "network_call_allowed": false,
+    "optimizer_call_allowed": false,
+    "formal_run_authorized": false
+  }
+}
