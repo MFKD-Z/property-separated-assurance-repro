@@ -1,3 +1,3 @@
-# Prepared data-availability statement
+# Data Availability
 
-The frozen evidence and verification scripts supporting the reported semantic, authority, reconstruction, controlled negative-control, and bounded implementation-cost results are available in the versioned Property-Separated Assurance reproducibility package at https://github.com/MFKD-Z/property-separated-assurance-repro, release v2.0.0. External language-model outputs are archived as fixed realizations; reproducing the reported results does not require a new provider call.
+The frozen evidence and verification scripts supporting the reported semantic, authority, reconstruction, controlled negative-control, and bounded implementation-cost results are publicly available in the Property-Separated Assurance Reproducibility Package v2.0.0 on Zenodo (version-specific DOI: https://doi.org/10.5281/zenodo.22110943) and in the corresponding GitHub release at https://github.com/MFKD-Z/property-separated-assurance-repro/releases/tag/v2.0.0. External language-model outputs are archived as fixed realizations; reproducing the reported evidence does not require a new provider call.
