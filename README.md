@@ -32,6 +32,16 @@ The Git tree verifies all compact evidence and records the timing ledger as a ve
 - controlled P3 clean and M1–M9 negative controls;
 - bounded component-only latency, allocation, and observed-range descriptive scaling evidence.
 
+## Archival record
+
+The final-manuscript reproducibility package `v2.0.0` is archived on Zenodo under the version-specific DOI:
+
+https://doi.org/10.5281/zenodo.22110943
+
+The corresponding GitHub release is:
+
+https://github.com/MFKD-Z/property-separated-assurance-repro/releases/tag/v2.0.0
+
 ## Claim boundary
 
 The package verifies finite frozen evidence from one reference implementation and declared environment. It does not prove universal trustworthiness, security, tamper-proof provenance, real-time capability, industrial scalability, or production readiness. External language-model outputs are archived fixed realizations; a new provider call would create a different realization.
