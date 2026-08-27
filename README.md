@@ -6,6 +6,18 @@ This versioned package supports the final manuscript evidence for property-separ
 
 - `v1.0.0` is the historical legacy minimal reproducibility package for semantic, authority, P2, dynamic accounting, reconstruction, and replay evidence.
 - `v2.0.0` carries that evidence forward and adds the exact-artifact P1/OB specification, controlled P3 negative controls, and bounded assurance implementation-cost evidence.
+- 
+## Manuscript-synchronized formal clarification
+
+The archived `v2.0.0` release and Zenodo DOI `10.5281/zenodo.22110943` remain the frozen empirical-evidence package. A later scientific-argument closure refined formal terminology without changing any retained output, denominator, or numerical result.
+
+For the manuscript-synchronized formulation, see:
+
+- `specification/P1_ASSUMPTION_ROLE_SPEC_V2.md`;
+- `specification/OB1_OB7_PROPERTY_BOUNDARIES_V2.md`;
+- `MANUSCRIPT_SYNC_NOTE_20260827.md`.
+
+The V2 clarification distinguishes type closure from authority closure, separates authoritative engineering knowledge (`K_eng`) from operational state (`S_op`), uses `authority-closure` and `exact-artifact-activation` in P1, and treats reconstruction as post-acceptance evidence rather than an activation prerequisite. The historical V1 specification files are retained for release provenance.
 
 ## Verify
 
