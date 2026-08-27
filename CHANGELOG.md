@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased — manuscript synchronization
+
+- added manuscript-synchronized P1 authority-closure specification;
+- added synchronized OB1–OB7 boundary specification with `K_eng` / `S_op` separation;
+- clarified operational acceptance versus post-acceptance reconstruction;
+- retained all v2.0.0 empirical evidence, tags, release assets, denominators, and numerical results unchanged.
+
+Do not change
+
 ## v2.0.0 — 2026-08-26
 
 - final manuscript scientific-closure evidence;
