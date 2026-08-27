@@ -6,7 +6,7 @@ This versioned package supports the final manuscript evidence for property-separ
 
 - `v1.0.0` is the historical legacy minimal reproducibility package for semantic, authority, P2, dynamic accounting, reconstruction, and replay evidence.
 - `v2.0.0` carries that evidence forward and adds the exact-artifact P1/OB specification, controlled P3 negative controls, and bounded assurance implementation-cost evidence.
-- 
+
 ## Manuscript-synchronized formal clarification
 
 The archived `v2.0.0` release and Zenodo DOI `10.5281/zenodo.22110943` remain the frozen empirical-evidence package. A later scientific-argument closure refined formal terminology without changing any retained output, denominator, or numerical result.
