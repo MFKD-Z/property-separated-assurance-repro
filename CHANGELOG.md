@@ -7,8 +7,6 @@
 - clarified operational acceptance versus post-acceptance reconstruction;
 - retained all v2.0.0 empirical evidence, tags, release assets, denominators, and numerical results unchanged.
 
-Do not change
-
 ## v2.0.0 — 2026-08-26
 
 - final manuscript scientific-closure evidence;
